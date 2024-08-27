@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <title>Mouse Jiggler Updater</title>
+    </head>
+
+    <body>
+        <h1 id="title">Raspberry Pi Pico Mouse Jiggler Updater:</h1>
+        <h3 id="currentVersion">Current Version: v</h3>
+        <button id="checkForUpdate-btn">Check For Updates</button>
+    </body>
+
+    <style>
+        body {
+            background-color: #696969;
+            text-align: center;
+        }
+
+        #title, #currentVersion {
+            font-family: sans-serif;
+        }
+
+        #checkForUpdate-btn {
+            width: 140px;
+            height: 25px;
+            background-color: #898989;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            
+        }
+
+        #checkForUpdate-btn:hover {
+            background-color: #595959;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        const softwareVersion = '0.1.0';
+
+        let currentVersion = document.getElementById('currentVersion');
+
+        currentVersion.textContent += softwareVersion;
+    </script>
+</html>
