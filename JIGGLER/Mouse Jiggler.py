@@ -1,4 +1,4 @@
-# Mouse Jiggler (For Raspberry Pi Pico W):
+# Mouse Jiggler v0.1.0 (For Mouse Jiggler W):
 
 from time import sleep
 import usb_hid
